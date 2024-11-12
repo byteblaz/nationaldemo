@@ -9,7 +9,7 @@ import HTMLIcon from '@/assets/icons/html5.svg';
 import CssIcon from '@/assets/icons/css3.svg';
 import ReactIcon from '@/assets/icons/react.svg';
 import ChromeIcon from '@/assets/icons/chrome.svg';
-import GitHubIcon from '@/assets/icons/github.svg'; 
+import GitHubIcon from '@/assets/icons/github.svg';
 import FireIcon from '@/assets/icons/fire.svg';
 import Manu from '@/assets/icons/jkkl.svg';
 import { TechIcon } from "@/components/TechIcon";
@@ -33,13 +33,13 @@ const toolboxItems = [
 ];
 
 const hobbies = [
-  { title: 'Hiring', emoji: '🧑🏻‍💼', left: "5%", top: "5%" },
-  { title: 'Consulting', emoji: '🧑🏻‍💻', left: "50%", top: "5%" },
-  { title: 'Outsourcing', emoji: '🤝', left: "35%", top: "40%" },
-  { title: 'Timely Services', emoji: '⌛', left: "10%", top: "35%" },
-  { title: 'Support 24/7', emoji: '📞', left: "70%", top: "45%" },
-  { title: 'Quality', emoji: '✔️', left: "5%", top: "65%" },
-  { title: 'Staffing Simplified', emoji: '👩🏻‍💼', left: "45%", top: "70%" },
+  { title: 'Hiring', emoji: '🧑🏻‍💼' },
+  { title: 'Consulting', emoji: '🧑🏻‍💻' },
+  { title: 'Outsourcing', emoji: '🤝' },
+  { title: 'Timely Services', emoji: '⌛' },
+  { title: 'Support 24/7', emoji: '📞' },
+  { title: 'Quality', emoji: '✔️' },
+  { title: 'Staffing Simplified', emoji: '👩🏻‍💼' },
 ];
 
 export const AboutSection = () => {
@@ -89,20 +89,21 @@ export const AboutSection = () => {
                 description="We provide expert help and customized solutions to help you meet challenges and reach your goals."
                 className="px-6 py-6"
               />
-              <div className="relative flex-1" ref={constraintRef}>
+              <div 
+                className="relative grid gap-4 p-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4" 
+                ref={constraintRef}
+              >
                 {hobbies.map((hobby) => (
                   <motion.div
                     key={hobby.title}
-                    className="inline-flex items-center gap-2 px-6 sm:px-3 sm:text-base bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
-                    style={{
-                      left: hobby.left,
-                      top: hobby.top,
-                    }}
+                    className="flex items-center justify-center gap-1 px-2 py-1 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full max-w-[120px] text-xs sm:text-sm md:text-base"
                     drag
                     dragConstraints={constraintRef}
                   >
-                    <span className="font-medium text-gray-950">{hobby.title}</span>
-                    <span>{hobby.emoji}</span>
+                    <span className="font-medium text-gray-950 whitespace-nowrap overflow-hidden text-ellipsis">
+                      {hobby.title}
+                    </span>
+                    <span className="ml-1">{hobby.emoji}</span>
                   </motion.div>
                 ))}
               </div>

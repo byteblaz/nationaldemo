@@ -18,12 +18,14 @@ import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import grainImage from '@/assets/images/grain.jpg';
 import { SectionHeader } from "@/components/SectionHeader";
 import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
+import { RainbowButton } from '@/components/ui/rainbow-button';
+import { RainbowBlack } from '@/components/ui/rainbow-black';
 
 const portfolioProjects = [
   {
-    company: "National Gulf Consultants",
-    year: "2014",
-    title: "Pro Services",
+    company: "Swipe For More",
+    year: "",
+    title: "PRO Services",
     kl:"one",
     aboutmain:"At National Gulf, our PRO services streamline your business operations in Oman by managing all government-related procedures and documentation. With our extensive experience and established relationships with various government departments, we ensure the smooth and efficient processing of all your business requirements.",
     titleone:"PRO Services and Documents Clearing",
@@ -43,8 +45,8 @@ const portfolioProjects = [
   },
   {
     
-      company: "National Gulf Consultants",
-      year: "2014",
+      company: "Swipe For More",
+      year: "",
       title: "Visa Services",
       kl: "two",
       aboutmain: "At National Gulf, we provide comprehensive visa services to facilitate seamless entry and residence in the Sultanate of Oman. Our expert team guides you through every step of the visa application process, ensuring a smooth and efficient experience for investors, businesspeople, and visitors alike.",
@@ -71,14 +73,14 @@ const portfolioProjects = [
       aboutconcl: "Our visa services are characterized by meticulous attention to detail and professional expertise. We maintain strong relationships with government authorities, enabling efficient processing of applications. Throughout the process, we provide regular status updates and address any concerns promptly. Our team's in-depth knowledge of Omani immigration laws and procedures ensures successful visa outcomes for our clients. Contact National Gulf today to explore the most suitable visa options for your needs and experience our premium visa processing services in Oman.",
   
     
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "",
     image: lightSaasLandingPage,
   },
   
   {
     
-      company: "National Gulf Consultants",
-      year: "2014",
+      company: "Swipe For More",
+      year: "",
       title: "Corporate Tax and VAT",
       kl: "three",
       aboutmain: "National Gulf provides comprehensive corporate tax and VAT services in Oman, ensuring full compliance with local tax regulations while maximizing efficiency for your business. Our team of tax experts offers strategic guidance and practical solutions to help you navigate Oman's tax landscape effectively.",
@@ -113,13 +115,13 @@ const portfolioProjects = [
       titleconcl: "Why Choose Our Tax Services",
       aboutconcl: "Our tax services team combines deep local knowledge with international tax expertise to deliver comprehensive solutions for your business. We stay current with Oman's evolving tax landscape to provide timely, accurate advice and ensure full compliance while optimizing your tax position. With our proactive approach, regular updates, and dedicated support, you can focus on your core business while we handle your tax obligations efficiently. Contact National Gulf today to discuss how we can assist with your corporate tax and VAT requirements in Oman.",
   
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "",
     image: vatone,
   },
   {
     
-      company: "National Gulf Consultants",
-      year: "2024",
+      company: "Swipe For More",
+      year: "",
       title: "ISO Certification",
       kl: "four",
       aboutmain: "Achieving ISO certification is crucial for businesses aiming to uphold quality, safety, and operational excellence in line with international standards. Our comprehensive ISO certification services help your organization navigate the certification process smoothly, ensuring full compliance with industry requirements and best practices.",
@@ -147,12 +149,12 @@ const portfolioProjects = [
       
       
     
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "",
     image: isoone,
   },
   {
-    company: "National Gulf Consultants",
-    year: "2014",
+    company: "Swipe For More",
+    year: "",
     title: "Company Formation",
     kl: "five",
     aboutmain: "At National Gulf Consultants, we specialize in offering comprehensive services for company formation in Oman. Our expert team will guide you through the entire process, ensuring compliance with Omani laws and regulations. We help both local and international entrepreneurs set up their businesses smoothly and efficiently.",
@@ -204,7 +206,7 @@ const portfolioProjects = [
     
     titleconcl: "Why Choose Our Company Formation Services",
     aboutconcl: `Starting a business in Oman can be a complex process, but with National Gulf Consultants, you get expert support every step of the way. Our team is committed to providing clear guidance, handling all the legal and regulatory requirements, and ensuring your business setup is completed quickly and efficiently. Let us help you establish your business in Oman with ease.`,
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "",
     image: companyone,
   },
   
@@ -233,21 +235,22 @@ export const ServiSection = () => {
                 {/* Card wrapper with border */}
                 <div className="rounded-3xl p-[1px] bg-gradient-to-r from-white/20 via-white/20 to-white/20 hover:shadow-2xl hover:shadow-yellow-400/50 transition-shadow duration-300">
                   {/* Content container */}
-                  <NeonGradientCard className="bg-white/5 backdrop-blur hover:bg-slate-500 rounded-3xl ">
+                  
+                  <NeonGradientCard className="bg-white/5 backdrop-blur hover:bg-slate-500 rounded-3xl">
                     <div className=" sm:p-1 p-8 md:p-12 lg:p-16 relative">
                       {/* Grain effect */}
                       <div className="absolute inset-0 -z-10 opacity-5" style={{
                 backgroundImage: `url(${grainImage.src})`,
               }}>
-                      
-                      </div>
+          </div>
 
                       <div className="flex flex-col gap-8"> {/* Changed to flex layout */}
                         <div className="flex-1">
                           {/* Company Info */}
                           <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest md:text-sm lg:text-base sm:text-xs text-transparent bg-clip-text">
                             <span>{project.company}</span>
-                            <span>&bull;</span>
+                            
+                            
                             <span>{project.year}</span>
                           </div>
 
@@ -361,10 +364,10 @@ export const ServiSection = () => {
                           {/* Button */}
                         <a href={project.link} className=" mt-8">
                         <div className="relative lg:mt-20 sm:mt-7">
-                        <button className="bg-white/10 backdrop-blur text-gray-950 h-10 w-full  px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">
-                         <span className="text-white/60">Services</span>
+                        <RainbowBlack className="bg-white/10 backdrop-blur text-gray-950 h-10 w-full  px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">
+                         <span className="text-white">Swipe For More</span>
                          <ArrowUpRightIcon className="w-4 h-4 text-green-300" />
-                       </button>
+                       </RainbowBlack>
                          </div>
                           </a>
                         </div>

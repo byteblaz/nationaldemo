@@ -7,6 +7,7 @@ import grainImage from '@/assets/images/grain.jpg';
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/card";
 import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
+import { RainbowBlack } from "@/components/ui/rainbow-black";
 
 const portfolioProjects = [
   {
@@ -25,7 +26,7 @@ const portfolioProjects = [
       { title: "Ministry of Labour Services" },
       
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "./Service",
     image: AboutUs,
   },
   
@@ -87,12 +88,14 @@ export const AboutMain = () => {
                   </p>
                   
                   {/* Services Button */}
-                  <a href={project.link} className="mt-8 inline-block">
-                    <button className="bg-white/10 backdrop-blur text-gray-950 h-10 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
-                      <span className="text-white/60">Services</span>
-                      <ArrowUpRightIcon className="w-4 h-4 text-green-300" />
-                    </button>
-                  </a>
+                  <a href={project.link} className=" mt-8">
+                        <div className="relative lg:mt-20 sm:mt-7">
+                        <RainbowBlack className="bg-white/10 backdrop-blur text-white h-10 w-full  px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">
+                         <span className="text-white">Services</span>
+                         <ArrowUpRightIcon className="w-4 h-4 text-green-300" />
+                       </RainbowBlack>
+                         </div>
+                          </a>
                 </div>
 
                 {/* Project Image */}

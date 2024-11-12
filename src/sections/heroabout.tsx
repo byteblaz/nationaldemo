@@ -8,6 +8,7 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from '@/assets/icons/sparkle.svg';
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import { BorderBeam } from "@/components/ui/border-beam";
+import { RainbowBlack } from "@/components/ui/rainbow-black";
 export const HeroSection = () => {
   return (
   <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
@@ -66,10 +67,10 @@ export const HeroSection = () => {
       
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-        <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+        <RainbowBlack className=" flex flex-row items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
           <span className="font-semibold">About Us</span>
-          <ArrowDown className="size-4"/>
-        </button>
+          <ArrowDown className="size-4 mt-1"/>
+        </RainbowBlack>
         <RainbowButton className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
           <span className="font-semibold">Let&rsquo;s Connect</span>
         </RainbowButton>

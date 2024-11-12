@@ -60,7 +60,7 @@ export const TestimonialsSection = () => {
           <Fragment key={index}>
            
           {testimonials.map(testimonials =>(
-            <NeonGradientCard key={testimonials.name} className="max-w-xs md:max-w-md p-6 md:p-8 hover:-rotate-3 transition shadow-md hover:shadow-lg hover:shadow-purple-400/50 transition-shadow duration-300 transition duration-300">
+            <NeonGradientCard key={testimonials.name} className="max-w-xs md:max-w-md  hover:-rotate-3  hover:shadow-lg hover:shadow-purple-400/50 transition-shadow duration-300 transition duration-300 ">
              <div className="flex gap-4 items-center justify-center">
              <div className="flex flex-col items-center">
              <div className=" text-center font-serif  text-3xl bg-gradient-to-r from-white/70  via-purple-400 to-yellow-200  bg-clip-text text-transparent ">{testimonials.name}</div>

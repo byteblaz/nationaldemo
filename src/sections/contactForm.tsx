@@ -3,6 +3,10 @@ import Image from 'next/image';
 import { useState, FormEvent } from 'react';
 import { Card } from '@/components/card';
 import { SectionHeader } from '@/components/SectionHeader';
+import { NeonGradientCard } from '@/components/ui/neon-gradient-card';
+import { RainbowButton } from '@/components/ui/rainbow-button';
+import grainImage from '@/assets/images/grain.jpg';
+import { RainbowBlack } from '@/components/ui/rainbow-black';
 
 export const ContactForm = () => {
   const [subject, setSubject] = useState('');
@@ -39,7 +43,11 @@ export const ContactForm = () => {
     
     <div className="flex flex-col items-center justify-center min-h-screen p-4 sm:p-8 lg:p-24">
       <SectionHeader eyebrow="Just A Message Away" title="We&rsquo;d Love to Hear from You"description="Have a question, need assistance, or want to discuss our services? Fill out the form below, and our team will get back to you as soon as possible."/>
-      <Card className="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl p-6 sm:p-10 lg:p-16 shadow-lg hover:shadow-2xl hover:bg-slate-500/30 hover:shadow-yellow-400/50 rounded-xl transition-shadow duration-300 bg-white/10 mt-8">
+      <Card className=" relative w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl p-6 sm:p-10 lg:p-16 shadow-lg hover:shadow-2xl hover:bg-slate-500/30 hover:shadow-yellow-400/50 rounded-xl transition-shadow duration-300 bg-white/10 mt-8">
+        <NeonGradientCard className='absolute inset-0 -z-10'></NeonGradientCard>
+        <div className="absolute inset-0 -z-10 opacity-5" style={{
+                backgroundImage: `url(${grainImage.src})`,
+              }}></div>
         <form onSubmit={sendMail} className="space-y-6">
           <div className="flex flex-col items-start gap-4">
             <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-white">Contact Us</h1>
@@ -94,14 +102,15 @@ export const ContactForm = () => {
             />
           </div>
           
-          <button
+          <RainbowBlack
             type="submit"
             className="w-full py-3 sm:py-4 rounded-lg bg-blue-600 text-white text-md sm:text-lg font-medium hover:bg-blue-700 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Send Message
-          </button>
+          </RainbowBlack>
         </form>
       </Card>
+      
     
     </div>
   );

@@ -72,7 +72,7 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
         } as CSSProperties
       }
       className={cn(
-        "relative z-10 size-full rounded-[var(--border-radius)] transform transition-transform duration-500 ease-in-out hover:scale-105",
+        "relative z-10 size-full rounded-[var(--border-radius)] transform transition-transform duration-500 ease-in-out",
         className
       )}
       {...props}

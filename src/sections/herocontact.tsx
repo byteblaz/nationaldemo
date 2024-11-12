@@ -5,6 +5,10 @@ import grainImage from '@/assets/images/grain.jpg';
 import StarIcon from '@/assets/icons/star.svg';
 import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from '@/assets/icons/sparkle.svg';
+import { RainbowButton } from "@/components/ui/rainbow-button";
+import { PulsatingButton } from "@/components/ui/pulsating-button";
+import { BorderBeam } from "@/components/ui/border-beam";
+import { RainbowBlack } from "@/components/ui/rainbow-black";
 export const HeroContact= () => {
   return (
   <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
@@ -54,19 +58,20 @@ export const HeroContact= () => {
       </div>
     
       </div>
-      <div className="max-w-lg mx-auto">
+      <div className="max-w-lg mx-auto overflow-x-clip">
+        <BorderBeam/>
       <h1 className="font-serif text-3xl md:text-5xl text-center mt-5 tracking-wide bg-gradient-to-r from-yellow-300  via-sky-400 to-yellow-200  bg-clip-text text-transparent">Let&rsquo;s Connect and Collaborate</h1>
       <p className="mt-4 text-center text-white/50 md:text-lg">
       Get in touch with us to discuss your needs and explore how our recruitment expertise can make a difference for you. We’re here to answer your questions and provide the support you need.</p>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-        <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+        <RainbowBlack className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
           <span className="font-semibold">Contact Form</span>
-          <ArrowDown className="size-4"/>
-        </button>
-        <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          <ArrowDown className="size-4 mt-1"/>
+        </RainbowBlack>
+        <RainbowButton className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
           <span className="font-semibold">Let&rsquo;s Connect</span>
-        </button>
+        </RainbowButton>
       </div>
        </div>
   </div>

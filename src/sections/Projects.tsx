@@ -11,6 +11,7 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import grainImage from '@/assets/images/grain.jpg';
 import { SectionHeader } from "@/components/SectionHeader";
+import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
 const portfolioProjects = [
   {
     company: "National Gulf Consultants",
@@ -25,7 +26,7 @@ const portfolioProjects = [
       { title: "Ministry of Labour Services" },
       
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "./Service",
     image: darkSaasLandingPage,
   },
   {
@@ -41,7 +42,7 @@ const portfolioProjects = [
       { title: "5 Years Investor Visa in Oman" },
       { title: "10 Years Investor Visa in Oman" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "./Service",
     image: lightSaasLandingPage,
   },
   {
@@ -58,7 +59,7 @@ const portfolioProjects = [
       
 
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "./Service",
     image: taxone,
   },
   {
@@ -73,7 +74,7 @@ const portfolioProjects = [
       { title: "Economic Substance Regulations" },
 
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "./Service",
     image: vatone,
   },
   {
@@ -89,7 +90,7 @@ const portfolioProjects = [
       { title: "ISO 20000-1:2011 Information Technology Service Management System" },
       { title: "ISO 45001:2018 Occupational Health And Safety Management System" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "./Service",
     image: isoone,
   },
   {
@@ -105,7 +106,7 @@ const portfolioProjects = [
       { title: "Register Company Name or Trade Name in Oman" },
       
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "./Service",
     image: companyone,
   },
   {
@@ -121,7 +122,7 @@ const portfolioProjects = [
       { title: "Sole Proprietor Company in Oman - SPC" },
       
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "./Service",
     image: companytwo,
   },
   {
@@ -137,7 +138,7 @@ const portfolioProjects = [
       { title: "Company Registration in Oman" },
      
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "./Service",
     image: companythree,
   },
   

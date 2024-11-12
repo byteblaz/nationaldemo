@@ -5,7 +5,9 @@ import grainImage from '@/assets/images/grain.jpg';
 import StarIcon from '@/assets/icons/star.svg';
 import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from '@/assets/icons/sparkle.svg';
-import AnimatedGradientText from "@/components/ui/animated-gradient-text";
+import { BorderBeam } from "@/components/ui/border-beam";
+import { RainbowButton } from "@/components/ui/rainbow-button";
+import { RainbowBlack } from "@/components/ui/rainbow-black";
 
 export const HeroSection = () => {
   return (
@@ -59,8 +61,9 @@ export const HeroSection = () => {
         <div className="text-sm font-medium">Delivering Quality Manpower</div>
       </div>
       </div>
-      <div className="max-w-lg mx-auto">
-      <AnimatedGradientText className="font-serif text-3xl md:text-5xl text-center mt-5 tracking-wide">Where Dreams Meet Expectations</AnimatedGradientText>
+      <div className="max-w-lg mx-auto overflow-x-clip">
+        <BorderBeam />
+      <h1 className="font-serif text-3xl md:text-5xl text-center mt-5 tracking-wide">Where Dreams Meet Expectations</h1>
       <p className="mt-4 text-center text-white/60 md:text-lg">
       We elevate your expectations to reality through expert 
       Consulting services. 
@@ -69,13 +72,13 @@ export const HeroSection = () => {
       </p>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-        <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+        <RainbowBlack className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
           <span className="font-semibold">Services</span>
-          <ArrowDown className="size-4"/>
-        </button>
-        <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          <ArrowDown className="size-4 mt-1"/>
+        </RainbowBlack>
+        <RainbowButton className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
           <span className="font-semibold">Let&rsquo;s Connect</span>
-        </button>
+        </RainbowButton>
       </div>
        </div>
   </div>
