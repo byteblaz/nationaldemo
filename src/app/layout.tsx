@@ -3,6 +3,8 @@ import {Inter,Calistoga,Merriweather, Merriweather_Sans,Lora} from 'next/font/go
 /*import {Inter,Calistoga} from 'next/font/google';*/
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Lora({subsets:['latin'],variable:"--font-sans"});
 const calistoga = Calistoga({
@@ -24,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={twMerge(inter.variable, calistoga.variable,"bg-gray-900 text-white antialiased font-sans")}>{children} 
+      <body className={twMerge(inter.variable, calistoga.variable,"bg-gray-900 text-white antialiased font-sans")}>{children}
+      <Analytics />
+      <SpeedInsights /> 
       </body>
     </html>
   );
