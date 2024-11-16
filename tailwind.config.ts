@@ -10,6 +10,7 @@ const config: Config = {
   ],
   theme: {
   	screens: {
+		xs: '320px',
   		sm: '375px',
   		md: '768px',
   		lg: '1200px'
@@ -26,6 +27,10 @@ const config: Config = {
   			sans: 'var(--font-sans)',
   			serif: 'var(--font-serif)'
   		},
+		  fontSize: {
+			'xxs': '0.625rem', // 10px
+			'tiny': '0.5rem',  // 8px
+		  },
   		animation: {
   			'ping-large': 'ping-large 1s ease-in-out infinite',
   			'move-left': 'move-left 1s linear infinite',

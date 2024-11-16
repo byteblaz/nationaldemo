@@ -77,13 +77,13 @@ export const AboutMain = () => {
           
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   
-                  <p className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 font-thin">
+                  <p className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 font-thin">
                     {project.about}
                   </p>
-                  <p className="font-sans md:text-lg lg:text-xl sm:text-sm mt-2">
+                  <p className="font-sans md:text-lg lg:text-lg sm:text-sm mt-2">
                     {project.abouttwo}
                   </p>
-                  <p className="font-sans md:text-lg lg:text-xl sm:text-sm mt-2">
+                  <p className="font-sans md:text-lg lg:text-lg sm:text-sm mt-2">
                     {project.aboutthree}
                   </p>
                   

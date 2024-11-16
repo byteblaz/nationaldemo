@@ -259,105 +259,105 @@ export const ServiSection = () => {
                           </h3>
                           
                           <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutmain}
                           </h3>
                           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                            {project.titleone}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutone}
                           </h3>
                           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                            {project.titletwo}
                           </h3>
                           
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.abouttwo}
                             </h3>
                           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                             {project.titlethree}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutthree}
                           </h3>
                          <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                           {project.titlefour}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutfour}
                           </h3>
                          <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                           {project.titlefive}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutfive}
                             </h3>
                             <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                             {project.titlesix}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutsix}
                             </h3>
                             <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                             {project.titleseven}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutseven}
                           </h3>
                           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                             {project.titleeight}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.abouteight}
                           </h3>
                           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                             {project.titlenine}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutnine}
                           </h3>
                           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                             {project.titleten}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutten}
                           </h3>
                           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                             {project.titleeleven}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.abouteleven}
                           </h3>
                           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                             {project.titletwelwe}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.abouttwelwe}
                           </h3>
                           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                             {project.titlethirteen}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutthirteen}
                           </h3>
                           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                             {project.titlefourteen}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutfourteen}
                           </h3>
                           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                             {project.titlefifteen}
                           </h3>
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutfifteen}
                           </h3>
                           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                             {project.titleconcl}
                           </h3>
                           
-                          <h3 className="font-sans md:text-lg lg:text-xl sm:text-sm mt-6 sm:mt-2">
+                          <h3 className="font-sans md:text-lg lg:text-lg sm:text-sm mt-6 sm:mt-2">
                             {project.aboutconcl}
                             </h3>
                         

@@ -60,14 +60,17 @@ export const TestimonialsSection = () => {
           <Fragment key={index}>
            
           {testimonials.map(testimonials =>(
-            <NeonGradientCard key={testimonials.name} className="max-w-xs md:max-w-md  hover:-rotate-3  hover:shadow-lg hover:shadow-purple-400/50 transition-shadow duration-300 transition duration-300 ">
+            <NeonGradientCard key={testimonials.name} className="max-w-xs md:max-w-md  hover:-rotate-3  hover:shadow-lg hover:shadow-purple-400/50 transition-shadow duration-300 transition duration-300 relative">
+              <div className="absolute inset-0 -z-10 opacity-5" style={{
+                backgroundImage: `url(${grainImage.src})`,
+              }}></div>
              <div className="flex gap-4 items-center justify-center">
              <div className="flex flex-col items-center">
-             <div className=" text-center font-serif  text-3xl bg-gradient-to-r from-white/70  via-purple-400 to-yellow-200  bg-clip-text text-transparent ">{testimonials.name}</div>
+             <div className=" text-center font-serif xs:text-xl sm:text-xl  text-3xl bg-gradient-to-r from-white/70  via-purple-400 to-yellow-200  bg-clip-text text-transparent ">{testimonials.name}</div>
              <div className="text-sm text-center text-white/40">{testimonials.position}</div>
              </div>
              </div>
-             <p className="mt-4 md:mt-6  text-center text-xl sm:text-sm md:text-xl ">{testimonials.text}</p>
+             <p className="mt-4 md:mt-6  text-center text-xl xs:text-sm sm:text-sm md:text-lg ">{testimonials.text}</p>
              </NeonGradientCard>
    
              

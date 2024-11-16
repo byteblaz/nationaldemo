@@ -20,6 +20,7 @@ import { Toolboxitems } from "@/components/Toolboxitems";
 import { motion } from 'framer-motion';
 import { useRef } from "react";
 import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
+import grainImage from '@/assets/images/grain.jpg';
 
 const toolboxItems = [
   { title: 'Construction', iconType: JavascriptIcon },
@@ -54,17 +55,23 @@ export const AboutSection = () => {
         />
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <NeonGradientCard className="h-[320px] md:col-span-1 lg:col-span-1">
+            <NeonGradientCard className="h-[320px] md:col-span-1 lg:col-span-1 xs:h-[320px] sm:h-[320px] xs:w-[85vw] sm:w-auto md:w-auto sm:m-0 md:m-0 xs:-ml-3 relative">
+            <div className="absolute inset-0 -z-10 opacity-5" style={{
+                backgroundImage: `url(${grainImage.src})`,
+              }}></div>
               <CardHeader
                 title="Our Mission"
                 description="We create a new experience of Human Resource by reliable hiring, outsourcing and staffing solutions"
               />
-              <div className="w-40 mx-auto -mt-9 md:mt-0 sm:mt-8">
+              <div className="w-40 mx-auto -mt-9 md:mt-0 sm:mt-8 xs:mt-8">
                 <Image src={bookImage} alt="Book Cover" />
               </div>
             </NeonGradientCard>
 
-            <NeonGradientCard className="h-[320px] md:col-span-1 lg:col-span-2">
+            <NeonGradientCard className="h-[320px] md:col-span-1 lg:col-span-2 lg:w-auto  xs:h-[300px] sm:h-[320px] xs:w-[85vw] sm:w-auto md:w-auto sm:m-0 md:m-0 xs:-ml-3 relative">
+            <div className="absolute inset-0 -z-10 opacity-5" style={{
+                backgroundImage: `url(${grainImage.src})`,
+              }}></div>
               <CardHeader
                 title="Our Recruitment Fields"
                 description="Our experience in recruiting extends to a wide range of fields"
@@ -83,7 +90,10 @@ export const AboutSection = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <NeonGradientCard className="h-[320px] p-0 flex flex-col md:col-span-1 lg:col-span-2 overflow-hidden">
+            <NeonGradientCard className="h-[320px] p-0 flex flex-col md:col-span-1 lg:col-span-2 overflow-hidden lg:w-auto  xs:h-[300px] sm:h-[320px] xs:w-[85vw] sm:w-auto md:w-auto sm:m-0 md:m-0 xs:-ml-3 relative">
+            <div className="absolute inset-0 -z-10 opacity-5" style={{
+                backgroundImage: `url(${grainImage.src})`,
+              }}></div>
               <CardHeader
                 title="What We Provide"
                 description="We provide expert help and customized solutions to help you meet challenges and reach your goals."
@@ -96,7 +106,7 @@ export const AboutSection = () => {
                 {hobbies.map((hobby) => (
                   <motion.div
                     key={hobby.title}
-                    className="flex items-center justify-center gap-1 px-2 py-1 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full max-w-[120px] text-xs sm:text-sm md:text-base"
+                    className="flex items-center justify-center gap-1 px-2 py-1 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full min-w-[120px] sm:-ml-4 sm:min-w-[125px] xs:min-w-[125px] xs:text-xxs sm:text-xxs md:text-xxs xs:-mt-4 sm:m-0"
                     drag
                     dragConstraints={constraintRef}
                   >
